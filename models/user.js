@@ -6,7 +6,7 @@ const db_user = db.model('user', {
 		required: [true, 'User Name is requierd']
 	},
 	email: {
-		String,
+		type: String,
 		required: [true, 'User Email is required']
 	},
 	password: {

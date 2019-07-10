@@ -1,4 +1,4 @@
-const db_user = require('..models/user')
+const db_user = require('../models/user')
 
 module.exports = (req, res) => {
 	db.user.find({}).select('name email').then( (data) => {
