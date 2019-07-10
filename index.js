@@ -13,9 +13,16 @@ app.use(cors())
 require('./db')
 
 // Routes
+app.post('/api/messages', require('./controllers/post_message'))
+app.get('/api/messages', require('./controllers/get_messages'))
 
+app.post('/api/hashtags', require('./controllers/post_hashtag'))
+app.get('/api/hashtags', require('./controllers/get_hashtags'))
 
+app.get('/api/users', require('./controllers/get_users'))
 
+app.post('/api/signup', require('./controllers/signup'))
+app.post('/api/signup', require('./controllers/login'))
 
 
 
